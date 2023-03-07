@@ -14,11 +14,12 @@ apiURL = "https://api.portaldatransparencia.gov.br/api-de-dados/emendas?ano=2020
 response_API = requests.get(apiURL, params=payload, headers=headers)
 print(response_API.status_code)
 
-printable1 = response_API.json()
-printable2 = response_API.text
+#printable1 = response_API.json()
+#printable2 = response_API.text
 printable3 = json.dumps(response_API.json(), sort_keys=True, indent=4)
 
 df = pd.read_json(printable3)
+df.to_csv(r'./CSV/file.csv', decimal=",", mode='a')
 
 df['valorPago'] = helper.objectToFloat(df, 'valorPago')
 df_num = pd.to_numeric(df['valorPago'])
