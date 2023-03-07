@@ -3,10 +3,10 @@ import json
 import pandas as pd
 import helper
 
-'''"[{"key":"chave-api-dados","value":"1b15c5e21b0a77d753cdca5570bffa24"}]
-nomedoAutor' : 'value1', 'localidadeDoGasto' : 'value2', 'tipoEmenda':'value3', 'valorEmpenhado':'value4', 'valorPago':'value5'
+#"[{"key":"chave-api-dados","value":"1b15c5e21b0a77d753cdca5570bffa24"}]
+#nomedoAutor' : 'value1', 'localidadeDoGasto' : 'value2', 'tipoEmenda':'value3', 'valorEmpenhado':'value4', 'valorPago':'value5'
 
-'''
+
 
 headers = {"chave-api-dados":"1b15c5e21b0a77d753cdca5570bffa24"}
 payload = {'key1':'value1'}
